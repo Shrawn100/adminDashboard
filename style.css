@@ -42,8 +42,50 @@ body{
 
 /* header content */
 .header{
+    
+    display:grid;
+    grid-template-rows: 1.3fr 2fr;
     border-bottom: 1px solid black;
     
+}
+
+.header-top-half{
+    
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    padding-left: 10px;
+    padding-right:10px;
+    
+}
+.left-side-search{
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+    padding-left:2px;
+}
+.left-side-search input{
+    width:90%;
+    height:2em;
+    border:1.9px solid  rgb(202, 202, 202);
+    border-radius: 7px;
+    background-color: rgb(202, 202, 202);
+}
+.right-side{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+    align-items:flex-end;
+    padding-right:20px;
+}
+.bell{
+    color:black;
+}
+
+.icon img{
+    display:flex;
+    height:3em;
+    width:3em;
+    border-radius:50%;
 }
 
 .content{
